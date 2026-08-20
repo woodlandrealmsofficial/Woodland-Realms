@@ -22,3 +22,48 @@ nav{max-width:min(72vw,940px);overflow-x:auto;scrollbar-width:none}nav::-webkit-
 /* Woodland Realms original 15-section structure */
 @media(min-width:961px){.site-header{padding-inline:clamp(14px,2.2vw,36px)}.brand span{display:none}nav{gap:14px;max-width:calc(100vw - 105px)}nav a{font-size:.62rem;letter-spacing:.055em;white-space:nowrap}}
 .builder-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:18px}.builder-card,.builder-preview,.staff-card{border:1px solid var(--line);background:linear-gradient(145deg,rgba(19,32,20,.9),rgba(8,15,9,.92));box-shadow:var(--shadow);border-radius:14px}.builder-card{padding:28px;display:grid;gap:18px}.builder-card label{display:grid;gap:8px;color:var(--green2);font:700 .72rem Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}.builder-card select{width:100%;padding:14px;border:1px solid var(--line);border-radius:8px;background:#09110a;color:var(--text);font:inherit}.builder-preview{padding:40px}.builder-preview h2{font-size:clamp(2.2rem,5vw,4rem);color:var(--gold2);margin:.15em 0}.builder-preview>p{color:var(--muted);line-height:1.75}.builder-note{margin-top:32px;padding-top:22px;border-top:1px solid var(--line)}.staff-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.staff-card{display:grid;grid-template-columns:82px 1fr;gap:18px;padding:28px}.staff-sigil{width:68px;height:68px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-size:2rem}.staff-card small{color:var(--green2);font:700 .7rem Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}.staff-card h3{color:var(--gold2);font-size:1.6rem;margin:.35em 0}.staff-card p{color:var(--muted);line-height:1.65}.featured-staff{grid-column:1/-1}.development-card{padding:25px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,rgba(19,32,20,.9),rgba(8,15,9,.92))}@media(max-width:760px){.builder-grid,.staff-grid{grid-template-columns:1fr}.featured-staff{grid-column:auto}.staff-card{grid-template-columns:64px 1fr}.portal-grid{grid-template-columns:1fr!important}}
+
+
+/* Woodland Realms v1.4 polish — loader, doors, navigation, server detail */
+:root{--header-h:78px}
+.site-header{height:var(--header-h);gap:18px;padding-inline:clamp(14px,2vw,34px)}
+.brand{flex:0 0 auto;min-width:58px}.brand img{width:48px;height:48px}.brand span{display:none}
+#nav{flex:1 1 auto;min-width:0;display:flex;align-items:center;justify-content:flex-end;gap:clamp(7px,.75vw,14px);overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding:0 2px}
+#nav::-webkit-scrollbar{display:none}
+#nav a{flex:0 0 auto;position:relative;padding:11px 1px 12px;font-size:clamp(.54rem,.54vw,.68rem);letter-spacing:.055em;line-height:1;white-space:nowrap}
+#nav a::after{left:0;bottom:5px;width:100%;height:2px;border-radius:2px;transform:scaleX(0);transform-origin:center;background:linear-gradient(90deg,transparent,var(--gold2) 20%,var(--gold2) 80%,transparent);transition:transform .24s ease,filter .24s ease}
+#nav a:hover::after,#nav a:focus-visible::after,#nav a.active::after{left:0;width:100%;transform:scaleX(1);filter:drop-shadow(0 0 5px rgba(240,220,155,.55))}
+#nav a.active{color:var(--gold2)}
+.site-header.compact{height:66px}.site-header.compact .brand img{width:42px;height:42px}
+
+.loader{background:radial-gradient(circle at 50% 42%,rgba(55,86,48,.24),transparent 30%),linear-gradient(rgba(2,8,4,.68),rgba(1,5,3,.94)),url('../assets/images/fantasy-woodland-bg.svg') center/cover;transition:opacity .6s ease,visibility .6s ease}
+.loader::before,.loader::after{content:"";position:absolute;inset:0;pointer-events:none}
+.loader::before{background:linear-gradient(90deg,rgba(223,207,144,.07),transparent 18%,transparent 82%,rgba(223,207,144,.07));box-shadow:inset 0 0 150px rgba(0,0,0,.88)}
+.loader::after{background:radial-gradient(ellipse at 50% 105%,rgba(137,160,90,.17),transparent 48%);animation:loaderMist 4.5s ease-in-out infinite alternate}
+.loader-content{z-index:2;width:min(680px,92vw);padding:34px clamp(20px,5vw,48px) 30px;border:1px solid rgba(216,193,122,.18);border-radius:18px;background:linear-gradient(180deg,rgba(4,11,6,.35),rgba(3,8,5,.72));box-shadow:0 30px 110px rgba(0,0,0,.65),inset 0 0 55px rgba(216,193,122,.025);backdrop-filter:blur(3px)}
+.loader-logo{width:min(220px,48vw);animation:loaderLogo 2.8s ease-in-out infinite;filter:drop-shadow(0 16px 38px #000) drop-shadow(0 0 22px rgba(181,205,105,.15))}
+.loader-content p{margin:8px 0 0}.loader-content h1{font-size:clamp(2rem,6vw,4.2rem);margin:.12em 0 .05em}
+.loader-frame{width:min(520px,88vw);height:76px;margin:18px auto 2px;padding:30px 52px 25px;display:grid;align-items:center}
+.loader-frame img{z-index:0;object-fit:fill;filter:drop-shadow(0 10px 20px rgba(0,0,0,.55))}.loader-bar{height:9px;border:1px solid rgba(240,220,155,.18);box-shadow:inset 0 2px 5px rgba(0,0,0,.8)}
+.loader-bar span{background:linear-gradient(90deg,#4e7037,#9dbb62 48%,#f0dc9b);background-size:180% 100%;animation:loaderBarGlow 1.25s linear infinite;transition:width .18s ease}
+.loader-content strong{margin-top:6px;font:700 1.05rem Arial,sans-serif;letter-spacing:.13em}.loader-content>span{min-height:20px;font-size:.88rem}
+
+.door-transition{display:block;visibility:hidden;opacity:0;background:#020503;transition:opacity .14s linear,visibility 0s linear .14s}
+.door-transition.active{visibility:visible;opacity:1;transition:opacity .12s linear;pointer-events:all}
+.door-transition::before{content:"";position:absolute;z-index:3;left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%);background:linear-gradient(transparent,rgba(240,220,155,.55) 25%,rgba(240,220,155,.8) 50%,rgba(240,220,155,.55) 75%,transparent);box-shadow:0 0 20px rgba(240,220,155,.35);opacity:.72;transition:opacity .55s ease}
+.door-transition.open::before{opacity:0}
+.door{top:0;width:50.5vw;height:100dvh;object-fit:cover;transition:transform 1.02s cubic-bezier(.72,.01,.22,1);filter:drop-shadow(0 0 35px rgba(0,0,0,.8));will-change:transform}
+.door.left{left:0;object-position:right center}.door.right{right:0;object-position:left center}
+.door-transition.open .left{transform:translate3d(-101%,0,0)}.door-transition.open .right{transform:translate3d(101%,0,0)}
+body.transitioning{overflow:hidden}
+
+.server-detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.server-detail-card{padding:28px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,rgba(18,31,19,.94),rgba(7,14,8,.94));box-shadow:var(--shadow)}.server-detail-card h3{margin:.2em 0 .45em;color:var(--gold2)}.server-detail-card p{color:var(--muted);line-height:1.7}.server-detail-card strong{color:var(--green2)}.system-pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.system-pill-row span{padding:7px 10px;border:1px solid rgba(216,193,122,.2);border-radius:999px;color:#d9d0bb;font:700 .66rem Arial,sans-serif;letter-spacing:.05em}.realm-stat-band{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.realm-stat{padding:24px;text-align:center;border:1px solid var(--line);border-radius:12px;background:rgba(8,17,10,.75)}.realm-stat strong{display:block;color:var(--gold2);font-size:clamp(1.7rem,4vw,3rem)}.realm-stat span{color:var(--muted);font:700 .7rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em}
+
+@keyframes loaderLogo{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-5px) scale(1.018)}}
+@keyframes loaderMist{from{transform:translate3d(-1.5%,0,0) scale(1)}to{transform:translate3d(1.5%,-1%,0) scale(1.04)}}
+@keyframes loaderBarGlow{from{background-position:100% 0}to{background-position:-80% 0}}
+
+@media(max-width:1280px){.site-header{padding-inline:12px;gap:10px}.brand img{width:43px;height:43px}#nav{gap:8px}#nav a{font-size:.55rem;letter-spacing:.035em}}
+@media(max-width:1080px){.menu{display:block;cursor:pointer}.site-header{height:70px;padding:0 18px}.brand span{display:grid}.brand img{width:44px;height:44px}#nav{position:fixed;top:69px;left:0;right:0;max-width:none;display:grid;align-content:start;justify-content:stretch;gap:0;padding:10px 20px 24px;max-height:calc(100dvh - 69px);overflow-y:auto;background:rgba(4,10,6,.985);border-bottom:1px solid var(--line);transform:translateY(-115%);opacity:0;pointer-events:none;transition:transform .32s ease,opacity .25s ease}#nav.open{transform:none;opacity:1;pointer-events:auto}#nav a{font-size:.76rem;letter-spacing:.08em;padding:14px 8px;border-bottom:1px solid rgba(216,193,122,.08)}#nav a::after{bottom:7px;width:55px;transform-origin:left}#nav a:hover::after,#nav a.active::after{transform:scaleX(1)}.site-header.compact{height:70px}.site-header.compact .brand img{width:44px;height:44px}.server-detail-grid{grid-template-columns:1fr 1fr}.realm-stat-band{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.loader-content{padding:25px 16px 23px;border-radius:14px}.loader-frame{height:64px;padding:25px 36px 21px}.door{width:50.8vw}.server-detail-grid,.realm-stat-band{grid-template-columns:1fr}.brand span{display:grid}}
+@media(prefers-reduced-motion:reduce){.loader-logo,.loader-atmosphere:before,.loader-atmosphere i,.ambient span{animation:none!important}.door,.loader,.reveal{transition-duration:.01ms!important}}

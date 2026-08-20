@@ -8,3 +8,13 @@
 - Development percentage continues to load from data/site.json for future Admin Hub control.
 - Existing Atlas data remains in data/regions.json and is reused by the Development Map.
 - Official GitHub target remains https://github.com/woodlandrealmsofficial.
+
+
+## v1.4 — Animation & Presentation Repair
+- Rebuilt the loader-to-door sequence as one continuous Realm Gate entrance.
+- Added proper opening doors after loading and full closing doors before internal navigation.
+- Corrected desktop and responsive navigation alignment and active/hover underline animation.
+- Added an earlier mobile-menu breakpoint so the 15-section navigation no longer crushes together.
+- Improved loader atmosphere, logo motion, progress presentation, and transition timing.
+- Expanded About, Gameplay, Quests, Items, Bestiary, and Server Guide with established Woodland Realms server systems and project history.
+- Preserved the original 15-section website plan and all existing v1.3 pages and data systems.

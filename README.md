@@ -22,3 +22,7 @@ GitHub Pages-ready standalone Woodland Realms Minecraft RPG server website.
 The existing fantasy loader, wooden-door page transitions, custom cursor, ambient effects, interactive atlas, and responsive foundation are preserved.
 
 Official GitHub organization: https://github.com/woodlandrealmsofficial
+
+
+### v1.4 presentation notes
+The first visit now uses the full loader followed by the wooden doors opening into the page. Internal page navigation closes the doors before moving to the next page, and subsequent pages use a shorter door-opening entrance. The 15-section navigation is preserved but switches to the mobile menu earlier to avoid desktop-width crowding.
