@@ -1,0 +1,169 @@
+{
+  "version": "1.2",
+  "regions": {
+    "western-wilds": {
+      "name": "Western Wilds",
+      "icon": "\ud83c\udf32",
+      "status": "Active Development",
+      "completion": 68,
+      "danger": "Moderate",
+      "summary": "Deep forest routes, hidden clearings and dangerous roads built around exploration, gathering and early story arcs.",
+      "description": "The Western Wilds form one of the realm's broad woodland frontiers. Old paths thread between dense forest, abandoned camps and quiet clearings. The region is being designed as an approachable exploration zone with enough secrets to reward players who leave the main road.",
+      "settlements": [
+        "Briarwatch",
+        "Greenbank Camp",
+        "Old Timber Crossing"
+      ],
+      "quests": [
+        "Lanterns on the Old Road",
+        "The Missing Forager",
+        "Whispers Beneath the Pines"
+      ],
+      "creatures": [
+        "Mossback Boar",
+        "Bramble Hare",
+        "Night Prowler"
+      ],
+      "resources": [
+        "Hardwood",
+        "Wild Herbs",
+        "Forest Mushrooms",
+        "Amber Resin"
+      ],
+      "features": [
+        "Hidden clearings",
+        "Forest roads",
+        "Gathering routes",
+        "Ruined camps",
+        "Secret trails"
+      ],
+      "gallery": [
+        "assets/woodland/realm-gallery-1.webp",
+        "assets/woodland/realm-gallery-2.webp"
+      ]
+    },
+    "heartwood-basin": {
+      "name": "Heartwood Basin",
+      "icon": "\u2302",
+      "status": "Core Region",
+      "completion": 82,
+      "danger": "Low\u2013Moderate",
+      "summary": "A central travel and trade region connecting towns, professions, roads and player-driven events.",
+      "description": "Heartwood Basin is planned as the social and economic heart of Woodland Realms. Roads from several directions converge here, making it a natural home for trade, profession progression, town activity and larger community events.",
+      "settlements": [
+        "Heartwood",
+        "Millstone Market",
+        "Riverside Ward"
+      ],
+      "quests": [
+        "A Merchant's Measure",
+        "Bread for the Road",
+        "The Bell at Dusk"
+      ],
+      "creatures": [
+        "River Otter",
+        "Field Mouse",
+        "Wayward Bandit"
+      ],
+      "resources": [
+        "Grain",
+        "River Clay",
+        "Common Timber",
+        "Trade Goods"
+      ],
+      "features": [
+        "Market district",
+        "Profession hubs",
+        "Player routes",
+        "River crossings",
+        "Event grounds"
+      ],
+      "gallery": [
+        "assets/woodland/realm-hero.webp",
+        "assets/woodland/realm-gallery-3.webp"
+      ]
+    },
+    "northern-reaches": {
+      "name": "Northern Reaches",
+      "icon": "\u2744",
+      "status": "Frontier Development",
+      "completion": 54,
+      "danger": "High",
+      "summary": "Cold frontiers, remote islands, rare resources and more dangerous expeditions for prepared travelers.",
+      "description": "The Northern Reaches are intended to feel distant and demanding. Weathered paths, exposed coastlines and isolated landforms create a harsher expedition zone where valuable resources and unusual encounters are balanced by greater risk.",
+      "settlements": [
+        "Frostmere Outpost",
+        "Northwatch",
+        "Driftwood Haven"
+      ],
+      "quests": [
+        "Across the Coldwater",
+        "The Beacon Keeper",
+        "Tracks in Fresh Snow"
+      ],
+      "creatures": [
+        "Frostfang Wolf",
+        "Cliff Hawk",
+        "Tundra Stag"
+      ],
+      "resources": [
+        "Rare Ore",
+        "Coldwater Fish",
+        "Pine Resin",
+        "Frost Herbs"
+      ],
+      "features": [
+        "Cold coastline",
+        "Remote islands",
+        "Rare materials",
+        "Expedition routes",
+        "High-risk encounters"
+      ],
+      "gallery": [
+        "assets/woodland/realm-gallery-2.webp",
+        "assets/woodland/realm-gallery-1.webp"
+      ]
+    },
+    "eastern-marches": {
+      "name": "Eastern Marches",
+      "icon": "\ud83d\udf03",
+      "status": "Planned Expansion",
+      "completion": 43,
+      "danger": "Moderate\u2013High",
+      "summary": "Old roads and fortified crossings prepared for future settlements, regional history and long-form quest chains.",
+      "description": "The Eastern Marches are being reserved for a broader expansion of the realm. The design emphasizes old roads, guarded crossings and the remains of earlier construction, leaving room for original factions, settlements and multi-stage adventures as development continues.",
+      "settlements": [
+        "Marchgate",
+        "Stoneford",
+        "Ashen Mile Camp"
+      ],
+      "quests": [
+        "The Broken Milestone",
+        "Guardians of the Ford",
+        "Letters from Marchgate"
+      ],
+      "creatures": [
+        "Marsh Fox",
+        "Roadside Vermin",
+        "Stonehide Ram"
+      ],
+      "resources": [
+        "Stone",
+        "Reeds",
+        "Iron",
+        "Medicinal Roots"
+      ],
+      "features": [
+        "Fortified roads",
+        "Old bridges",
+        "Future towns",
+        "Historic ruins",
+        "Quest corridors"
+      ],
+      "gallery": [
+        "assets/woodland/realm-gallery-3.webp",
+        "assets/woodland/realm-hero.webp"
+      ]
+    }
+  }
+}

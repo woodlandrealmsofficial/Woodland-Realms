@@ -1,0 +1,25 @@
+{
+  "serverName": "Woodland Realms",
+  "version": "v1.3-structure",
+  "minecraftVersion": "1.21",
+  "worldCompletion": 72,
+  "serverStatus": "In Development",
+  "serverAddress": "Coming Soon",
+  "discordUrl": "https://discord.gg/UhaNnvXAsM",
+  "planetMinecraftUrl": "https://www.planetminecraft.com/project/redwall-amp-beyond-full-scale-map-conquestreforged/",
+  "githubUrl": "https://github.com/woodlandrealmsofficial",
+  "features": [
+    "1400+ historical/planned quest concepts",
+    "Character classes and progression",
+    "Town and roleplay systems",
+    "Jobs and player economy",
+    "Custom items, foods and recipes",
+    "Custom creatures and encounters",
+    "Player cosmetics",
+    "Minigames and community activities"
+  ],
+  "javaSupported": true,
+  "bedrockSupported": "Planned / To Be Confirmed",
+  "playerCount": "\u2014",
+  "maxPlayers": "\u2014"
+}
