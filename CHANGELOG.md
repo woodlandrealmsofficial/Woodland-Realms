@@ -1,3 +1,13 @@
+# Woodland Realms v1.6
+
+- Fixed loader being hidden behind the door layer.
+- Full loader now appears on direct page loads and refreshes.
+- Internal page navigation uses close → travel title → sealed handoff → welcome title → gold flash → open.
+- Added opaque backing behind door artwork so page content cannot bleed through the door textures.
+- Added a brighter gold/yellow seam flash before the doors open.
+- Added mouse-cursor wind repulsion for falling leaves while preserving their falling animation.
+- Preserved the original 15-section Woodland Realms structure and all v1.5 restored effects.
+
 # Woodland Realms v1.5 — Loader, Doors & Fantasy Effects Restoration
 
 - Corrected the custom loader progress track using the original frame artwork alignment values.

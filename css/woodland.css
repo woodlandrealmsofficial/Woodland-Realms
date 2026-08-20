@@ -232,3 +232,31 @@ html.woodland-custom-scrollbar::-webkit-scrollbar,html.woodland-custom-scrollbar
 .woodland-fantasy-scrollbar__thumb{position:absolute;left:50%;top:0;width:31px;height:31px;transform:translate(-50%,0);background:url('../assets/images/custom-scrollbar-thumb.png') center/contain no-repeat;filter:drop-shadow(0 3px 6px rgba(0,0,0,.75)) drop-shadow(0 0 5px rgba(174,205,89,.25));will-change:transform}
 .woodland-fantasy-scrollbar.is-dragging .woodland-fantasy-scrollbar__thumb{filter:drop-shadow(0 4px 8px rgba(0,0,0,.8)) drop-shadow(0 0 9px rgba(224,184,85,.5))}
 @media(max-width:760px),(pointer:coarse){.woodland-fantasy-scrollbar{display:none!important}html.woodland-custom-scrollbar{scrollbar-width:auto}html.woodland-custom-scrollbar::-webkit-scrollbar,html.woodland-custom-scrollbar body::-webkit-scrollbar{width:initial;height:initial}}
+
+
+/* ================================================================
+   Woodland Realms v1.6 — transition sequencing repair
+   Loader always wins the first paint; doors close before navigation,
+   seal the page completely, flash gold at the seam, then reopen.
+   ================================================================ */
+.loader{z-index:7600!important}
+html.door-arrival .loader{display:none!important}
+.door-transition{z-index:7000!important;background:transparent!important;display:block!important;visibility:hidden;opacity:0;transition:opacity .08s linear,visibility 0s linear .08s}
+.door-transition.active{visibility:visible;opacity:1;transition:opacity .08s linear,visibility 0s linear 0s}
+.door-transition::before{content:"";position:absolute;inset:0;z-index:0;background:#090704;opacity:0;transition:opacity .22s ease;pointer-events:none}
+.door-transition.sealed::before{opacity:1}
+.door{background:#171008!important;backface-visibility:hidden!important}
+.door-transition.closing::before{opacity:0}
+.door-transition.sealed.closing::before{opacity:1}
+.door-transition::after{content:""!important;position:absolute!important;z-index:5!important;left:50%!important;top:-8%!important;bottom:-8%!important;width:8px!important;transform:translateX(-50%) scaleY(.15)!important;transform-origin:center!important;background:linear-gradient(180deg,transparent 0%,rgba(255,230,120,.45) 18%,#fff3a8 50%,rgba(255,203,62,.72) 82%,transparent 100%)!important;box-shadow:0 0 14px #ffe27a,0 0 38px rgba(255,202,59,.95),0 0 95px rgba(255,184,38,.72),0 0 180px rgba(255,205,68,.42)!important;filter:blur(.2px);opacity:0!important;pointer-events:none;transition:opacity .16s ease,transform .28s ease!important}
+.door-transition.flash::after{opacity:1!important;transform:translateX(-50%) scaleY(1)!important;animation:woodlandGateFlash .62s ease-out both}
+.door-transition.open::after{opacity:0!important}
+@keyframes woodlandGateFlash{0%{opacity:0;filter:brightness(1) blur(.5px);width:4px}28%{opacity:1;filter:brightness(1.75) blur(0);width:10px}62%{opacity:.88;filter:brightness(1.35) blur(.2px);width:7px}100%{opacity:0;filter:brightness(1) blur(1px);width:4px}}
+/* While the doors are physically closing, show the current page only in the
+   shrinking center gap; the artwork itself is backed by opaque wood tones. */
+body.transitioning{overflow:hidden}
+
+/* Mouse wind: CSS translate/rotate are independent from the fall animation's
+   transform, so leaves can be pushed aside without breaking their path. */
+.custom-leaf{--mouse-wind-x:0px;--mouse-wind-y:0px;--mouse-wind-rot:0deg;translate:var(--mouse-wind-x) var(--mouse-wind-y);rotate:var(--mouse-wind-rot);transition:translate .28s cubic-bezier(.2,.8,.2,1),rotate .32s ease;}
+body.loading .custom-leaf-field,body.transitioning .custom-leaf-field{opacity:0!important}
