@@ -1,168 +1,215 @@
 {
-  "version": "1.2",
+  "version": "1.7",
+  "source": "BRASHEXODUS Woodland Realms public map archive",
   "regions": {
-    "western-wilds": {
-      "name": "Western Wilds",
-      "icon": "\ud83c\udf32",
-      "status": "Active Development",
-      "completion": 68,
-      "danger": "Moderate",
-      "summary": "Deep forest routes, hidden clearings and dangerous roads built around exploration, gathering and early story arcs.",
-      "description": "The Western Wilds form one of the realm's broad woodland frontiers. Old paths thread between dense forest, abandoned camps and quiet clearings. The region is being designed as an approachable exploration zone with enough secrets to reward players who leave the main road.",
-      "settlements": [
-        "Briarwatch",
-        "Greenbank Camp",
-        "Old Timber Crossing"
-      ],
-      "quests": [
-        "Lanterns on the Old Road",
-        "The Missing Forager",
-        "Whispers Beneath the Pines"
-      ],
-      "creatures": [
-        "Mossback Boar",
-        "Bramble Hare",
-        "Night Prowler"
-      ],
-      "resources": [
-        "Hardwood",
-        "Wild Herbs",
-        "Forest Mushrooms",
-        "Amber Resin"
-      ],
+    "island-of-the-wrecked-ships": {
+      "name": "Island of the Wrecked Ships",
+      "icon": "\u2693",
+      "status": "ShaductorMPX Map Archive",
+      "completion": null,
+      "danger": "Not publicly rated",
+      "summary": "A rugged offshore island documented with steep stone formations, misty wooded interior routes, water-filled ravines and shadowed forest terrain.",
+      "description": "This named region appears in the Woodland Realms ShaductorMPX map archive. The public portfolio currently documents it through five development screenshots showing its rocky coastline, wooded interior and dramatic terrain.",
+      "settlements": [],
+      "quests": [],
+      "creatures": [],
+      "resources": [],
       "features": [
-        "Hidden clearings",
-        "Forest roads",
-        "Gathering routes",
-        "Ruined camps",
-        "Secret trails"
+        "Rocky coast",
+        "Misty forest",
+        "Water ravines",
+        "Steep terrain",
+        "5 archive images"
       ],
       "gallery": [
-        "assets/woodland/realm-gallery-1.webp",
-        "assets/woodland/realm-gallery-2.webp"
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/island-of-the-wrecked-ships/island-of-the-wrecked-ships-01.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/island-of-the-wrecked-ships/island-of-the-wrecked-ships-02.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/island-of-the-wrecked-ships/island-of-the-wrecked-ships-03.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/island-of-the-wrecked-ships/island-of-the-wrecked-ships-04.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/island-of-the-wrecked-ships/island-of-the-wrecked-ships-05.png"
       ]
     },
-    "heartwood-basin": {
-      "name": "Heartwood Basin",
-      "icon": "\u2302",
-      "status": "Core Region",
-      "completion": 82,
-      "danger": "Low\u2013Moderate",
-      "summary": "A central travel and trade region connecting towns, professions, roads and player-driven events.",
-      "description": "Heartwood Basin is planned as the social and economic heart of Woodland Realms. Roads from several directions converge here, making it a natural home for trade, profession progression, town activity and larger community events.",
-      "settlements": [
-        "Heartwood",
-        "Millstone Market",
-        "Riverside Ward"
-      ],
-      "quests": [
-        "A Merchant's Measure",
-        "Bread for the Road",
-        "The Bell at Dusk"
-      ],
-      "creatures": [
-        "River Otter",
-        "Field Mouse",
-        "Wayward Bandit"
-      ],
-      "resources": [
-        "Grain",
-        "River Clay",
-        "Common Timber",
-        "Trade Goods"
-      ],
+    "isle-of-irgash": {
+      "name": "Isle of Irgash",
+      "icon": "\u25c8",
+      "status": "ShaductorMPX Map Archive",
+      "completion": null,
+      "danger": "Not publicly rated",
+      "summary": "A compact island of changing woodland, shallow water, shoreline terraces and weathered tree cover.",
+      "description": "Isle of Irgash is one of the exact named regions preserved in the public Woodland Realms map archive. Four screenshots document its coast, interior water and tree-covered slopes.",
+      "settlements": [],
+      "quests": [],
+      "creatures": [],
+      "resources": [],
       "features": [
-        "Market district",
-        "Profession hubs",
-        "Player routes",
-        "River crossings",
-        "Event grounds"
+        "Island coast",
+        "Wetland interior",
+        "Terraced slopes",
+        "Woodland",
+        "4 archive images"
       ],
       "gallery": [
-        "assets/woodland/realm-hero.webp",
-        "assets/woodland/realm-gallery-3.webp"
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/isle-of-irgash/isle-of-irgash-01.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/isle-of-irgash/isle-of-irgash-02.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/isle-of-irgash/isle-of-irgash-03.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/isle-of-irgash/isle-of-irgash-04.png"
       ]
     },
-    "northern-reaches": {
-      "name": "Northern Reaches",
+    "isle-of-teramort": {
+      "name": "Isle of Teramort",
+      "icon": "\ud83c\udf3f",
+      "status": "ShaductorMPX Map Archive",
+      "completion": null,
+      "danger": "Not publicly rated",
+      "summary": "A dense green island dominated by enormous woodland canopy, enclosed waterways and high forested shores.",
+      "description": "Isle of Teramort is documented in four public development images from the ShaductorMPX map archive, showing a dense woodland canopy and water-cut island terrain.",
+      "settlements": [],
+      "quests": [],
+      "creatures": [],
+      "resources": [],
+      "features": [
+        "Dense canopy",
+        "Large trees",
+        "Interior waterways",
+        "Forested coast",
+        "4 archive images"
+      ],
+      "gallery": [
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/isle-of-teramort/isle-of-teramort-01.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/isle-of-teramort/isle-of-teramort-02.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/isle-of-teramort/isle-of-teramort-03.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/isle-of-teramort/isle-of-teramort-04.png"
+      ]
+    },
+    "land-of-ice-and-snow": {
+      "name": "Land of Ice and Snow",
       "icon": "\u2744",
-      "status": "Frontier Development",
-      "completion": 54,
-      "danger": "High",
-      "summary": "Cold frontiers, remote islands, rare resources and more dangerous expeditions for prepared travelers.",
-      "description": "The Northern Reaches are intended to feel distant and demanding. Weathered paths, exposed coastlines and isolated landforms create a harsher expedition zone where valuable resources and unusual encounters are balanced by greater risk.",
-      "settlements": [
-        "Frostmere Outpost",
-        "Northwatch",
-        "Driftwood Haven"
-      ],
-      "quests": [
-        "Across the Coldwater",
-        "The Beacon Keeper",
-        "Tracks in Fresh Snow"
-      ],
-      "creatures": [
-        "Frostfang Wolf",
-        "Cliff Hawk",
-        "Tundra Stag"
-      ],
-      "resources": [
-        "Rare Ore",
-        "Coldwater Fish",
-        "Pine Resin",
-        "Frost Herbs"
-      ],
+      "status": "ShaductorMPX Map Archive",
+      "completion": null,
+      "danger": "Not publicly rated",
+      "summary": "A snowbound northern land of pine forest, mountains, exposed ridges and broad frozen terrain.",
+      "description": "The Land of Ice and Snow is an exact named region in the public map archive. Four development screenshots document snowy forests, mountain ridges and its colder northern environment.",
+      "settlements": [],
+      "quests": [],
+      "creatures": [],
+      "resources": [],
       "features": [
-        "Cold coastline",
-        "Remote islands",
-        "Rare materials",
-        "Expedition routes",
-        "High-risk encounters"
+        "Snow fields",
+        "Pine forest",
+        "Mountain ridges",
+        "Northern terrain",
+        "4 archive images"
       ],
       "gallery": [
-        "assets/woodland/realm-gallery-2.webp",
-        "assets/woodland/realm-gallery-1.webp"
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/land-of-ice-and-snow/land-of-ice-and-snow-01.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/land-of-ice-and-snow/land-of-ice-and-snow-02.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/land-of-ice-and-snow/land-of-ice-and-snow-03.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/land-of-ice-and-snow/land-of-ice-and-snow-04.png"
       ]
     },
-    "eastern-marches": {
-      "name": "Eastern Marches",
-      "icon": "\ud83d\udf03",
-      "status": "Planned Expansion",
-      "completion": 43,
-      "danger": "Moderate\u2013High",
-      "summary": "Old roads and fortified crossings prepared for future settlements, regional history and long-form quest chains.",
-      "description": "The Eastern Marches are being reserved for a broader expansion of the realm. The design emphasizes old roads, guarded crossings and the remains of earlier construction, leaving room for original factions, settlements and multi-stage adventures as development continues.",
-      "settlements": [
-        "Marchgate",
-        "Stoneford",
-        "Ashen Mile Camp"
-      ],
-      "quests": [
-        "The Broken Milestone",
-        "Guardians of the Ford",
-        "Letters from Marchgate"
-      ],
-      "creatures": [
-        "Marsh Fox",
-        "Roadside Vermin",
-        "Stonehide Ram"
-      ],
-      "resources": [
-        "Stone",
-        "Reeds",
-        "Iron",
-        "Medicinal Roots"
-      ],
+    "peace-island": {
+      "name": "Peace Island",
+      "icon": "\u273f",
+      "status": "ShaductorMPX Map Archive",
+      "completion": null,
+      "danger": "Not publicly rated",
+      "summary": "A bright island landscape filled with pink flowering trees, sheltered coves, stone paths and lush garden-like terrain.",
+      "description": "Peace Island is preserved in five screenshots in the Woodland Realms map archive. The images show its distinctive pink flowering woodland, rocky slopes and protected water features.",
+      "settlements": [],
+      "quests": [],
+      "creatures": [],
+      "resources": [],
       "features": [
-        "Fortified roads",
-        "Old bridges",
-        "Future towns",
-        "Historic ruins",
-        "Quest corridors"
+        "Flowering trees",
+        "Sheltered coves",
+        "Stone terrain",
+        "Lush woodland",
+        "5 archive images"
       ],
       "gallery": [
-        "assets/woodland/realm-gallery-3.webp",
-        "assets/woodland/realm-hero.webp"
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/peace-island/peace-island-01.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/peace-island/peace-island-02.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/peace-island/peace-island-03.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/peace-island/peace-island-04.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/peace-island/peace-island-05.png"
+      ]
+    },
+    "ruddaring": {
+      "name": "Ruddaring",
+      "icon": "\u26f0",
+      "status": "ShaductorMPX Map Archive",
+      "completion": null,
+      "danger": "Not publicly rated",
+      "summary": "A mountainous forest island with high stone ridges, deep wooded valleys and dramatic mist-filled elevation changes.",
+      "description": "Ruddaring is one of the exact regions listed in the current public archive. Three screenshots document its high mountain walls, dense forest and deep valley terrain.",
+      "settlements": [],
+      "quests": [],
+      "creatures": [],
+      "resources": [],
+      "features": [
+        "Mountain walls",
+        "Deep valleys",
+        "Dense forest",
+        "Mist",
+        "3 archive images"
+      ],
+      "gallery": [
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/ruddaring/ruddaring-01.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/ruddaring/ruddaring-02.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/ruddaring/ruddaring-03.png"
+      ]
+    },
+    "volcano-island": {
+      "name": "Volcano Island",
+      "icon": "\u2668",
+      "status": "ShaductorMPX Map Archive",
+      "completion": null,
+      "danger": "Not publicly rated",
+      "summary": "A volcanic island built around a towering peak, scorched forest, glowing lava fields and a large exposed crater.",
+      "description": "Volcano Island is documented through five exact screenshots in the public Woodland Realms map archive, including its volcanic peak, lava terrain, forests and crater.",
+      "settlements": [],
+      "quests": [],
+      "creatures": [],
+      "resources": [],
+      "features": [
+        "Volcanic peak",
+        "Lava fields",
+        "Crater",
+        "Scorched woodland",
+        "5 archive images"
+      ],
+      "gallery": [
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/volcano-island/volcano-island-01.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/volcano-island/volcano-island-02.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/volcano-island/volcano-island-03.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/volcano-island/volcano-island-04.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/volcano-island/volcano-island-05.png"
+      ]
+    },
+    "wood-isle": {
+      "name": "Wood Isle",
+      "icon": "\ud83c\udf34",
+      "status": "ShaductorMPX Map Archive",
+      "completion": null,
+      "danger": "Not publicly rated",
+      "summary": "A warm green island with dense forest, pale shorelines, rocky hilltops and distinctive tropical-looking tree forms.",
+      "description": "Wood Isle is one of the exact named locations in the public map archive. Four development screenshots document its green coastline, forest canopy and rocky high points.",
+      "settlements": [],
+      "quests": [],
+      "creatures": [],
+      "resources": [],
+      "features": [
+        "Dense forest",
+        "Pale shoreline",
+        "Rocky hills",
+        "Warm-climate trees",
+        "4 archive images"
+      ],
+      "gallery": [
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/wood-isle/wood-isle-01.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/wood-isle/wood-isle-02.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/wood-isle/wood-isle-03.png",
+        "https://raw.githubusercontent.com/BRASHEXODUS/BRASHEXODUS-Portfolio/main/assets/legacy/woodland-realms/new-map/wood-isle/wood-isle-04.png"
       ]
     }
   }

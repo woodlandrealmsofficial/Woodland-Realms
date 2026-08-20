@@ -260,3 +260,26 @@ body.transitioning{overflow:hidden}
    transform, so leaves can be pushed aside without breaking their path. */
 .custom-leaf{--mouse-wind-x:0px;--mouse-wind-y:0px;--mouse-wind-rot:0deg;translate:var(--mouse-wind-x) var(--mouse-wind-y);rotate:var(--mouse-wind-rot);transition:translate .28s cubic-bezier(.2,.8,.2,1),rotate .32s ease;}
 body.loading .custom-leaf-field,body.transitioning .custom-leaf-field{opacity:0!important}
+
+
+/* ================================================================
+   Woodland Realms v1.7 — loader centering + navigation door behavior
+   ================================================================ */
+/* Keep the hand-drawn frame at its natural 2:1 geometry instead of
+   squashing it to the 8px progress track. The actual opening in the
+   artwork sits at roughly 16%–84% X and 25%–36% Y. */
+.loader-content{width:min(760px,94vw)!important}
+.loader-frame{position:relative!important;width:min(660px,90vw)!important;aspect-ratio:1774/887!important;margin:10px auto -46px!important;padding:0!important;display:block!important;transform:none!important}
+.loader-frame img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;pointer-events:none!important;z-index:2!important}
+.loader-bar{position:absolute!important;z-index:1!important;left:16.1%!important;right:16.1%!important;top:25.3%!important;height:10.7%!important;min-height:14px!important;margin:0!important;border-radius:999px!important;background:linear-gradient(180deg,#07120a,#162317)!important;box-shadow:inset 0 0 12px rgba(0,0,0,.9),0 0 10px rgba(148,185,79,.18)!important;overflow:hidden!important}
+.loader-bar span{height:100%!important;border-radius:999px!important;background:linear-gradient(90deg,#2f7638 0%,#78a953 46%,#d9bf59 82%,#fff1a4 100%)!important;box-shadow:0 0 18px rgba(235,211,113,.75)!important;position:relative!important}
+.loader-bar span::after{content:"";position:absolute;right:-7px;top:50%;width:20px;height:130%;transform:translateY(-50%);border-radius:50%;background:radial-gradient(circle,#fff8c8 0%,#f5d66b 38%,rgba(244,211,105,.2) 70%,transparent 72%);filter:blur(.2px);box-shadow:0 0 16px #f7df7b}
+.loader-content>strong{position:relative;z-index:3;margin-top:0!important}
+.loader-content>span{position:relative;z-index:3}
+@media(max-width:600px){.loader-frame{width:min(570px,96vw)!important;margin:4px auto -34px!important}.loader-bar{min-height:10px!important}}
+
+/* The door transition is navigation-only on normal page loads. A refresh or
+   direct visit shows the loader and then reveals the page immediately. */
+html:not(.door-arrival) .door-transition:not(.active){visibility:hidden!important;opacity:0!important}
+.door-transition.closing .door-sigil{opacity:0!important}
+.door-transition.sealed.closing .door-sigil{opacity:1!important}

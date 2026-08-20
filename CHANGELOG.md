@@ -1,3 +1,13 @@
+# Woodland Realms v1.7
+
+- Initial page loads now show only the Woodland Realms loader, then reveal the page directly.
+- Restored reliable close-first wooden-door navigation transitions between internal pages.
+- Destination pages open from closed doors with the welcome title and gold seam flash.
+- Rebuilt the custom loader frame at its natural aspect ratio and centered the progress track inside the actual carved opening.
+- Replaced placeholder atlas regions with the exact public ShaductorMPX archive regions: Island of the Wrecked Ships, Isle of Irgash, Isle of Teramort, Land of Ice and Snow, Peace Island, Ruddaring, Volcano Island, and Wood Isle.
+- Added all 34 public archive screenshot URLs to the region galleries.
+- Preserved the original 15-section Woodland Realms plan and existing fantasy effects.
+
 # Woodland Realms v1.6
 
 - Fixed loader being hidden behind the door layer.
