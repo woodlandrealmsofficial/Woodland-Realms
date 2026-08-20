@@ -1,3 +1,13 @@
+# Woodland Realms v1.8 — Transition, Loader & Particle Restoration
+
+- Compared Woodland Realms v1.7 directly against the working BRASHEXODUS Portfolio animation implementation.
+- Fixed the missing visible door-closing motion by keeping the transition backing transparent until both wooden doors meet.
+- Preserved the working door-opening animation and arrival gold seam flash.
+- Added first-paint protection so the underlying page no longer flashes before the main loader appears.
+- Upgraded the main loader with animated woodland motes, floating logo motion, percentage count-up, and a strong gold/yellow 100% completion glow.
+- Added the portfolio-style ambient canvas field with stars, fireflies, haze, and tiny drifting motes across Woodland Realms.
+- Preserved the existing interactive falling leaves, custom cursor, fantasy scrollbar, world atlas, site content, and original 15-section plan.
+
 # Woodland Realms v1.7
 
 - Initial page loads now show only the Woodland Realms loader, then reveal the page directly.

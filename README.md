@@ -1,3 +1,5 @@
+Woodland Realms v1.8 restores the transition/loader/particle behavior by comparing against the working BRASHEXODUS Portfolio source. The website structure and current content remain preserved.
+
 # Woodland Realms Website
 
 GitHub Pages-ready standalone Woodland Realms Minecraft RPG server website.
