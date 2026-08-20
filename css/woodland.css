@@ -67,3 +67,168 @@ body.transitioning{overflow:hidden}
 @media(max-width:1080px){.menu{display:block;cursor:pointer}.site-header{height:70px;padding:0 18px}.brand span{display:grid}.brand img{width:44px;height:44px}#nav{position:fixed;top:69px;left:0;right:0;max-width:none;display:grid;align-content:start;justify-content:stretch;gap:0;padding:10px 20px 24px;max-height:calc(100dvh - 69px);overflow-y:auto;background:rgba(4,10,6,.985);border-bottom:1px solid var(--line);transform:translateY(-115%);opacity:0;pointer-events:none;transition:transform .32s ease,opacity .25s ease}#nav.open{transform:none;opacity:1;pointer-events:auto}#nav a{font-size:.76rem;letter-spacing:.08em;padding:14px 8px;border-bottom:1px solid rgba(216,193,122,.08)}#nav a::after{bottom:7px;width:55px;transform-origin:left}#nav a:hover::after,#nav a.active::after{transform:scaleX(1)}.site-header.compact{height:70px}.site-header.compact .brand img{width:44px;height:44px}.server-detail-grid{grid-template-columns:1fr 1fr}.realm-stat-band{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.loader-content{padding:25px 16px 23px;border-radius:14px}.loader-frame{height:64px;padding:25px 36px 21px}.door{width:50.8vw}.server-detail-grid,.realm-stat-band{grid-template-columns:1fr}.brand span{display:grid}}
 @media(prefers-reduced-motion:reduce){.loader-logo,.loader-atmosphere:before,.loader-atmosphere i,.ambient span{animation:none!important}.door,.loader,.reveal{transition-duration:.01ms!important}}
+
+
+/* ================================================================
+   Woodland Realms v1.5 — restoration of the original portfolio
+   loader alignment, split-door message sequence, leaf field,
+   visible ivy cursor and functional fantasy scrollbar.
+   ================================================================ */
+
+/* Loader frame: use the original artwork's real aspect ratio and the
+   exact live-track placement that was tuned for fantasy-loader-frame.png. */
+.loader-frame{
+  position:relative!important;
+  width:min(680px,90vw)!important;
+  aspect-ratio:1774/887!important;
+  height:auto!important;
+  margin:-12px auto -150px!important;
+  padding:0!important;
+  pointer-events:none;
+  isolation:isolate;
+}
+.loader-frame > img{
+  position:absolute!important;
+  inset:0!important;
+  z-index:3!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  filter:drop-shadow(0 0 12px rgba(0,0,0,.82)) drop-shadow(0 0 18px rgba(72,160,76,.18))!important;
+}
+.loader-frame .loader-bar{
+  position:absolute!important;
+  z-index:1!important;
+  left:16.25%!important;
+  top:24.7%!important;
+  width:67.55%!important;
+  height:10.7%!important;
+  margin:0!important;
+  border:1px solid rgba(231,190,88,.46)!important;
+  border-radius:999px!important;
+  overflow:hidden!important;
+  background:linear-gradient(180deg,rgba(2,11,6,.96),rgba(8,24,12,.96))!important;
+  box-shadow:inset 0 0 18px rgba(0,0,0,.92),inset 0 1px rgba(255,239,175,.08),0 0 18px rgba(64,161,78,.13)!important;
+}
+.loader-frame .loader-bar::before{
+  content:"";
+  position:absolute;
+  inset:2px;
+  z-index:2;
+  pointer-events:none;
+  border-radius:inherit;
+  border:1px solid rgba(255,225,139,.08);
+}
+.loader-frame .loader-bar span{
+  position:relative;
+  z-index:1;
+  display:block;
+  width:0;
+  height:100%;
+  border-radius:inherit;
+  background:linear-gradient(180deg,rgba(255,255,255,.25),transparent 38%),linear-gradient(90deg,#315f37 0%,#6eaa58 38%,#d8aa42 76%,#fff0a8 100%)!important;
+  box-shadow:inset 0 1px rgba(255,255,255,.34),0 0 12px rgba(226,180,74,.8),0 0 34px rgba(74,194,92,.58)!important;
+  transition:width .1s linear!important;
+  animation:none!important;
+}
+.loader-frame .loader-bar span::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  right:-4px;
+  width:12px;
+  height:72%;
+  transform:translateY(-50%);
+  border-radius:50%;
+  background:#fff3b5;
+  box-shadow:0 0 8px #fff0a1,0 0 20px #e9b94d,0 0 34px rgba(87,214,104,.88);
+}
+.loader-content strong{margin-top:8px!important}
+@media(max-width:700px){.loader-frame{width:min(94vw,560px)!important;margin:-6px auto -125px!important}}
+@media(max-width:480px){.loader-frame{width:min(98vw,470px)!important;margin:0 auto -103px!important}.loader-frame .loader-bar{height:11.2%!important}}
+
+/* Wooden door transition: restore the centered BRASHEXODUS travel plaque
+   and give opening/closing their own readable hold states. */
+.door-transition{z-index:5500!important;background:#171108!important;perspective:1400px}
+.door-transition::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:radial-gradient(circle at 50% 48%,rgba(194,151,64,.12),transparent 32%),linear-gradient(rgba(1,5,3,.28),rgba(0,0,0,.48));
+  pointer-events:none;
+}
+.door{z-index:1!important;width:50.08%!important;height:100dvh!important;object-fit:fill!important;transition:transform .95s cubic-bezier(.72,0,.18,1)!important;will-change:transform}
+.door.left{object-position:center!important;filter:drop-shadow(12px 0 26px rgba(0,0,0,.65)) brightness(.98)}
+.door.right{object-position:center!important;filter:drop-shadow(-12px 0 26px rgba(0,0,0,.65)) brightness(.98)}
+.door-transition::after{
+  content:"";
+  position:absolute;
+  z-index:3;
+  left:50%;top:0;bottom:0;width:4px;
+  transform:translateX(-50%) scaleY(1);
+  transform-origin:center;
+  background:linear-gradient(transparent,rgba(255,222,131,.9) 25%,#fff1b0 50%,rgba(255,222,131,.9) 75%,transparent);
+  box-shadow:0 0 12px #ffe89a,0 0 34px rgba(235,183,69,.68),0 0 64px rgba(83,188,96,.34);
+  opacity:.72;
+  transition:opacity .35s ease,transform .45s ease;
+  pointer-events:none;
+}
+.door-transition.open::after{opacity:0;transform:translateX(-50%) scaleY(.2)}
+.door-sigil{
+  position:absolute;
+  z-index:6;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%) scale(.96);
+  min-width:min(330px,78vw);
+  padding:18px 26px;
+  border:1px solid rgba(240,200,101,.42);
+  border-radius:18px;
+  background:rgba(4,10,6,.78);
+  backdrop-filter:blur(5px);
+  box-shadow:0 0 40px rgba(0,0,0,.62),inset 0 0 24px rgba(226,181,77,.08);
+  text-align:center;
+  opacity:0;
+  transition:opacity .3s ease,transform .3s ease,filter .3s ease;
+  pointer-events:none;
+}
+.door-transition.active:not(.open) .door-sigil{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.door-sigil strong,.door-sigil small{display:block;font-family:Arial,sans-serif;text-transform:uppercase;color:#f0c968;text-shadow:0 0 16px rgba(240,201,104,.28)}
+.door-sigil strong{font-size:.95rem;letter-spacing:.13em;margin-bottom:7px}
+.door-sigil small{font-size:.82rem;font-weight:700;letter-spacing:.15em;line-height:1.45}
+.door-transition.text-glow .door-sigil{filter:brightness(1.22);box-shadow:0 0 52px rgba(0,0,0,.7),0 0 30px rgba(239,195,89,.16),inset 0 0 28px rgba(226,181,77,.12)}
+@media(max-width:760px){.door-sigil{max-width:78vw;padding:14px 18px}.door-sigil strong{font-size:.82rem}.door-sigil small{font-size:.7rem}}
+
+/* Original hand-drawn falling leaves, restored from the portfolio source. */
+:root{--leaf-layer-z:2}
+.custom-leaf-field{position:fixed;inset:0;z-index:var(--leaf-layer-z);overflow:hidden;pointer-events:none;contain:strict;isolation:isolate;transition:opacity .25s ease}
+.custom-leaf{--leaf-size:42px;--leaf-opacity:.72;--leaf-duration:18s;--leaf-delay:0s;--leaf-start-x:50vw;--leaf-drift:90px;--leaf-sway:38px;--leaf-rotation:420deg;position:absolute;top:-14vh;left:0;width:var(--leaf-size);height:var(--leaf-size);object-fit:contain;opacity:0;transform-origin:50% 48%;filter:drop-shadow(0 5px 6px rgba(0,0,0,.42));will-change:transform,opacity;animation:customLeafFall var(--leaf-duration) linear var(--leaf-delay) infinite}
+.custom-leaf.is-near{filter:drop-shadow(0 7px 9px rgba(0,0,0,.5))}.custom-leaf.is-far{filter:blur(.35px) drop-shadow(0 3px 4px rgba(0,0,0,.32))}
+@keyframes customLeafFall{0%{opacity:0;transform:translate3d(var(--leaf-start-x),-12vh,0) rotate(0deg) scale(.72)}7%{opacity:var(--leaf-opacity)}28%{transform:translate3d(calc(var(--leaf-start-x) + var(--leaf-sway)),24vh,0) rotate(calc(var(--leaf-rotation) * .28)) scale(.92)}56%{transform:translate3d(calc(var(--leaf-start-x) + var(--leaf-drift)),59vh,0) rotate(calc(var(--leaf-rotation) * .58)) scale(1)}82%{opacity:var(--leaf-opacity);transform:translate3d(calc(var(--leaf-start-x) + var(--leaf-drift) - var(--leaf-sway)),91vh,0) rotate(calc(var(--leaf-rotation) * .84)) scale(.9)}100%{opacity:0;transform:translate3d(calc(var(--leaf-start-x) + var(--leaf-drift)),116vh,0) rotate(var(--leaf-rotation)) scale(.76)}}
+body.loading .custom-leaf-field,body.transitioning .custom-leaf-field{opacity:0}
+.hero>*,.section>*,.page-hero>*,footer>*{position:relative;z-index:4}
+@media(max-width:760px){.custom-leaf:nth-child(n+13){display:none}.custom-leaf{--leaf-size:34px}}
+@media(prefers-reduced-motion:reduce){.custom-leaf-field{display:none!important}}
+
+/* Restore the large ivy cursor. */
+@media(pointer:fine){
+  html,html *,body,body *{cursor:none!important}
+  .cursor{display:block!important;position:fixed!important;z-index:2147483647!important;width:64px!important;height:52px!important;background:url('../assets/images/custom-cursor.png') left top/contain no-repeat!important;pointer-events:none!important;transform:translate(-9px,-7px) rotate(-4deg)!important;transform-origin:15% 12%!important;filter:drop-shadow(0 3px 5px rgba(0,0,0,.66))!important;transition:width .16s ease,height .16s ease,transform .16s ease,opacity .18s ease!important;opacity:1}
+  .cursor.hover{width:72px!important;height:58px!important;transform:translate(-10px,-8px) rotate(2deg)!important}
+  .cursor.clicking{transform:translate(-9px,-7px) rotate(-7deg) scale(1.18)!important}
+  body.loading .cursor,body.transitioning .cursor{opacity:0!important;visibility:hidden!important}
+}
+@media(pointer:coarse){body{cursor:auto!important}.cursor{display:none!important}}
+
+/* Functional fantasy scrollbar restored from the portfolio. */
+html.woodland-custom-scrollbar{scrollbar-width:none}
+html.woodland-custom-scrollbar::-webkit-scrollbar,html.woodland-custom-scrollbar body::-webkit-scrollbar{width:0;height:0}
+.woodland-fantasy-scrollbar{position:fixed;top:92px;right:5px;bottom:18px;width:34px;z-index:1150;user-select:none;touch-action:none;opacity:1;transition:opacity .3s ease,transform .3s ease}
+.woodland-fantasy-scrollbar[hidden],body.loading .woodland-fantasy-scrollbar,body.transitioning .woodland-fantasy-scrollbar{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+.woodland-fantasy-scrollbar__track{position:absolute;inset:0;background:url('../assets/images/custom-scrollbar-track.png') center/100% 100% no-repeat;filter:drop-shadow(0 5px 10px rgba(0,0,0,.65))}
+.woodland-fantasy-scrollbar__rail{position:absolute;top:5.5%;bottom:5.5%;left:50%;width:25px;transform:translateX(-50%)}
+.woodland-fantasy-scrollbar__thumb{position:absolute;left:50%;top:0;width:31px;height:31px;transform:translate(-50%,0);background:url('../assets/images/custom-scrollbar-thumb.png') center/contain no-repeat;filter:drop-shadow(0 3px 6px rgba(0,0,0,.75)) drop-shadow(0 0 5px rgba(174,205,89,.25));will-change:transform}
+.woodland-fantasy-scrollbar.is-dragging .woodland-fantasy-scrollbar__thumb{filter:drop-shadow(0 4px 8px rgba(0,0,0,.8)) drop-shadow(0 0 9px rgba(224,184,85,.5))}
+@media(max-width:760px),(pointer:coarse){.woodland-fantasy-scrollbar{display:none!important}html.woodland-custom-scrollbar{scrollbar-width:auto}html.woodland-custom-scrollbar::-webkit-scrollbar,html.woodland-custom-scrollbar body::-webkit-scrollbar{width:initial;height:initial}}

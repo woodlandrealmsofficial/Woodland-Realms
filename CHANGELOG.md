@@ -1,3 +1,15 @@
+# Woodland Realms v1.5 — Loader, Doors & Fantasy Effects Restoration
+
+- Corrected the custom loader progress track using the original frame artwork alignment values.
+- Restored the BRASHEXODUS transition plaque text on the wooden doors.
+- Closing doors now display “TRAVELING THROUGH THE REALM.”
+- Opening doors now display “WELCOME TO THE REALM.”
+- Restored the original hand-drawn falling-leaf asset set and motion system.
+- Restored a large, visible ivy custom cursor with hover/click response.
+- Restored the functional fantasy image scrollbar with draggable thumb and track clicks.
+- Effects automatically reduce/disable where appropriate for touch devices, reduced-motion users, and data-saving mode.
+- Preserved the existing 15-section Woodland Realms information architecture and all v1.4 content.
+
 # Woodland Realms v1.3 Structure Alignment
 
 - Preserved the existing Woodland Realms fantasy design, loader, doors, cursor, atmosphere, atlas, and responsive systems.
